@@ -16,11 +16,11 @@ Tutorial: https://www.youtube.com/watch?v=o_OZdbCzHUA
 
 locale.setlocale(locale.LC_ALL, '')
 
-consumer_key = ''
-consumer_secret = ''
+consumer_key = ' your key '
+consumer_secret = ' your secret '
 
-access_token = ''
-access_token_secret = ''
+access_token = ' your token '
+access_token_secret = ' your token secret '
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
