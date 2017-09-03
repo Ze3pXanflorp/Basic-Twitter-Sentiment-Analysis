@@ -114,7 +114,7 @@ class MyListener(StreamListener):
         self.message_win.refresh()
         self.clear_message_win()
 
-        # logging
+        # store in csv
         if overall % tweets_per_period == 0: self.index = datetime.datetime.now()
 
         self.df.set_value(self.index, self.header[0], key_word)
@@ -131,7 +131,6 @@ class MyListener(StreamListener):
         self.df.to_csv(log_file)
 
         return True
-
 
 try:
     twitter_stream = Stream(auth, MyListener())
