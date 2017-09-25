@@ -8,13 +8,12 @@ import locale
 import time
 import datetime
 import pandas as pd
+locale.setlocale(locale.LC_ALL, '')
 
 """
 Code is based on the tutorial by Siraj Raval
 Tutorial: https://www.youtube.com/watch?v=o_OZdbCzHUA
 """
-
-locale.setlocale(locale.LC_ALL, '')
 
 consumer_key = ' your key '
 consumer_secret = ' your secret '
